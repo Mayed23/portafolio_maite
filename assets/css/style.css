@@ -484,16 +484,16 @@ body {
 /* ---------- Contenedor de proyectos ---------- */
 
 .proyectos-lista {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 /* ---------- Tarjeta ---------- */
 
 .proyecto-card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 42% 58%;
     overflow: hidden;
     background-color: var(--color-blanco);
     border: 1px solid #e2e2e2;
@@ -510,8 +510,8 @@ body {
 /* ---------- Imagen ---------- */
 
 .proyecto-imagen {
-    width: 100%;
-    height: 230px;
+    height: 100%;
+    min-height: 320px;
     overflow: hidden;
     background-color: #eeeeee;
 }
@@ -1113,11 +1113,17 @@ body {
     }
 
     .proyectos-lista {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .proyecto-card {
-        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-imagen {
+        min-height: 240px;
+        height: 240px;
     }
 
     /*    PROYECTO ELEGIDO RESPONSIVE      */
