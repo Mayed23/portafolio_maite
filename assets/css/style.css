@@ -11,7 +11,6 @@
     box-sizing: border-box;
 }
 
-
 /*    VARIABLES DE COLOR      */
 
 :root {
@@ -24,129 +23,96 @@
     --color-gris: #555555;
     --color-blanco: #ffffff;
     --color-diamante: #fad503;
-    
 }
-
-
 
 /*    BODY     */
 
 body {
     font-family: "Montserrat", sans-serif;
-
     background-color: var(--color-fondo);
     color: var(--color-texto);
+    overflow-x: hidden;
 }
 
-
-/*    HEADER      */
+/*    HEADER     */
 
 .header {
     width: 100%;
     background-color: var(--color-turquesa-oscuro);
-
     padding: 20px 5%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 /* ---------- Logo ---------- */
 
 .logo {
     display: flex;
     align-items: center;
-
     gap: 8px;
-
     text-decoration: none;
-
     color: var(--color-fondo);
-
     font-size: 20px;
     font-weight: 600;
 }
-
 
 /* ---------- Diamante ---------- */
 
 .logo-diamante {
     width: 12px;
     height: 12px;
-
     background-color: var(--color-diamante);
-
     transform: rotate(45deg);
 }
-
 
 /* ---------- Navegación ---------- */
 
 .nav {
     display: flex;
     align-items: center;
-
     gap: 25px;
 }
 
-
 .nav a {
     text-decoration: none;
-
     color: var(--color-fondo);
-
     font-size: 14px;
 }
-
 
 .nav a:hover {
     color: var(--color-texto);
 }
 
+/*    HERO    */
 
-/*   HERO   */
 .hero {
     min-height: 85vh;
-
     padding: 80px 5%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 80px;
-
     text-align: left;
 }
-
 
 /* ---------- Foto ---------- */
 
 .hero-foto {
     width: 330px;
     height: 430px;
-
     overflow: hidden;
-
     border-radius: 50%;
-
-    border: 5px solid #fad503;
-
+    border: 5px solid var(--color-diamante);
     flex-shrink: 0;
 }
-
 
 .hero-foto img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     display: block;
 }
-
 
 /* ---------- Contenido ---------- */
 
@@ -154,54 +120,41 @@ body {
     max-width: 850px;
 }
 
-
 /* ---------- Saludo ---------- */
 
 .hero-saludo {
     margin-bottom: 15px;
-
     font-size: 14px;
     font-weight: 500;
 }
-
 
 /* ---------- Título principal ---------- */
 
 .hero h1 {
     margin-bottom: 20px;
-
     font-size: clamp(45px, 7vw, 90px);
     font-weight: 600;
-
     color: var(--color-turquesa-oscuro);
 }
-
 
 /* ---------- Subtítulo ---------- */
 
 .hero h2 {
     margin-bottom: 25px;
-
     font-size: clamp(18px, 2.5vw, 28px);
     font-weight: 500;
-
     color: var(--color-turquesa-oscuro);
 }
-
 
 /* ---------- Descripción ---------- */
 
 .hero-descripcion {
     max-width: 650px;
-
     margin: 0 0 35px;
-
     font-size: 16px;
     line-height: 1.8;
-
     color: var(--color-gris);
 }
-
 
 /* ---------- Botones ---------- */
 
@@ -212,46 +165,36 @@ body {
     gap: 15px;
 }
 
-
 .boton {
     display: inline-block;
-
     padding: 13px 24px;
-
     background-color: var(--color-azul-boton);
     color: var(--color-blanco);
-
     text-decoration: none;
-
     font-size: 13px;
     font-weight: 600;
-
     border-radius: 30px;
-
     transition: 0.3s;
 }
-
 
 .boton:hover {
     transform: translateY(-3px);
 }
 
-
 /* ---------- Botón secundario ---------- */
 
 .boton-secundario {
     background-color: var(--color-turquesa-oscuro);
-
     color: var(--color-blanco);
-
     border: 1px solid var(--color-texto);
 }
+
 
 /*    SOBRE MÍ     */
 
 .sobre-mi {
     padding: 120px 5%;
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
 }
 
 .sobre-mi-contenedor {
@@ -259,8 +202,7 @@ body {
     margin: 0 auto;
 }
 
-
-/*   ENCABEZADO     */
+/* ---------- Encabezado ---------- */
 
 .sobre-mi-encabezado {
     margin-bottom: 70px;
@@ -279,11 +221,10 @@ body {
     font-size: clamp(35px, 5vw, 60px);
     line-height: 1.15;
     font-weight: 600;
-    color: var(--color-texto);
+    color: var(--color-turquesa-oscuro);
 }
 
-
-/*    EXPERIENCIA Y TRANSICIÓN    */
+/* ---------- Experiencia y transición ---------- */
 
 .sobre-mi-contenido {
     display: grid;
@@ -315,12 +256,12 @@ body {
 
 .sobre-mi-bloque p {
     font-size: 15px;
+    text-align: justify;
     line-height: 1.9;
     color: var(--color-gris);
 }
 
-
-/*    FORMACIÓN TECNOLÓGICA    */
+/* ---------- Formación tecnológica ---------- */
 
 .sobre-mi-formacion {
     max-width: 850px;
@@ -332,6 +273,7 @@ body {
 .sobre-mi-formacion p {
     margin-bottom: 20px;
     font-size: 18px;
+    text-align: justify;
     line-height: 1.8;
     color: #333333;
 }
@@ -345,8 +287,7 @@ body {
     font-weight: 600;
 }
 
-
-/*    FRASE DESTACADA    */
+/* ---------- Frase destacada ---------- */
 
 .sobre-mi-frase {
     max-width: 900px;
@@ -355,6 +296,7 @@ body {
 
 .sobre-mi-frase p {
     font-size: clamp(24px, 3vw, 38px);
+    text-align: justify;
     line-height: 1.3;
     font-weight: 500;
     color: var(--color-texto);
@@ -364,8 +306,7 @@ body {
     color: var(--color-azul);
 }
 
-
-/*    LÍNEA DE EVOLUCIÓN      */
+/* ---------- Línea de evolución ---------- */
 
 .sobre-mi-evolucion {
     display: flex;
@@ -389,6 +330,7 @@ body {
 .evolucion-item p {
     font-size: 13px;
     font-weight: 600;
+    text-align: justify;
     color: var(--color-texto);
 }
 
@@ -398,7 +340,8 @@ body {
     margin: 0 20px;
     background-color: #cccccc;
 }
-/*    SKILLS     */
+
+/*    SKILLS    */
 
 .skills {
     padding: 120px 5%;
@@ -410,8 +353,7 @@ body {
     margin: 0 auto;
 }
 
-
-/*    ENCABEZADO      */
+/* ---------- Encabezado ---------- */
 
 .skills-encabezado {
     max-width: 800px;
@@ -423,7 +365,7 @@ body {
     font-size: clamp(35px, 5vw, 60px);
     line-height: 1.15;
     font-weight: 600;
-    color: var(--color-texto);
+    color: var(--color-turquesa-oscuro);
 }
 
 .skills-introduccion {
@@ -433,8 +375,7 @@ body {
     color: var(--color-gris);
 }
 
-
-/*    GRID DE SKILLS    */
+/* ---------- Grid de skills ---------- */
 
 .skills-grid {
     display: grid;
@@ -442,16 +383,16 @@ body {
     gap: 25px;
 }
 
-
-/*    TARJETAS     */
+/* ---------- Tarjetas ---------- */
 
 .skill-card {
     position: relative;
     padding: 35px;
     background-color: var(--color-blanco);
     border: 1px solid #e2e2e2;
-    transition: transform 0.3s ease,
-                border-color 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .skill-card:hover {
@@ -459,8 +400,7 @@ body {
     border-color: var(--color-azul);
 }
 
-
-/*    NÚMERO      */
+/* ---------- Número ---------- */
 
 .skill-numero {
     display: block;
@@ -471,8 +411,7 @@ body {
     color: var(--color-azul);
 }
 
-
-/*    TÍTULO    */
+/* ---------- Título ---------- */
 
 .skill-card h3 {
     margin-bottom: 15px;
@@ -481,18 +420,17 @@ body {
     color: var(--color-texto);
 }
 
-
-/*       DESCRIPCIÓN        */
+/* ---------- Descripción ---------- */
 
 .skill-card p {
     margin-bottom: 25px;
     font-size: 14px;
+    text-align: justify;
     line-height: 1.7;
     color: var(--color-gris);
 }
 
-
-/*    LISTA    */
+/* ---------- Lista ---------- */
 
 .skill-card ul {
     list-style: none;
@@ -508,11 +446,12 @@ body {
     font-weight: 500;
     color: var(--color-texto);
 }
-/*    PROYECTOS      */
+
+/*    PROYECTOS     */
 
 .proyectos {
     padding: 120px 5%;
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
 }
 
 .proyectos-contenedor {
@@ -520,8 +459,7 @@ body {
     margin: 0 auto;
 }
 
-
-/*    ENCABEZADO      */
+/* ---------- Encabezado ---------- */
 
 .proyectos-encabezado {
     max-width: 800px;
@@ -533,7 +471,7 @@ body {
     font-size: clamp(35px, 5vw, 60px);
     line-height: 1.15;
     font-weight: 600;
-    color: var(--color-texto);
+    color: var(--color-turquesa-oscuro);
 }
 
 .proyectos-introduccion {
@@ -543,25 +481,25 @@ body {
     color: var(--color-gris);
 }
 
+/* ---------- Contenedor de proyectos ---------- */
 
-/*    CONTENEDOR DE PROYECTOS     */
-
-.proyectos-grid {
-    display: flex;
+.proyectos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    align-items: stretch;
 }
 
-
-/*    TARJETA        */
+/* ---------- Tarjeta ---------- */
 
 .proyecto-card {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background-color: var(--color-blanco);
     border: 1px solid #e2e2e2;
-    transition: transform 0.3s ease,
-                border-color 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .proyecto-card:hover {
@@ -569,8 +507,7 @@ body {
     border-color: var(--color-azul);
 }
 
-
-/*    IMAGEN    */
+/* ---------- Imagen ---------- */
 
 .proyecto-imagen {
     width: 100%;
@@ -591,14 +528,18 @@ body {
     transform: scale(1.04);
 }
 
-
-/*    CONTENIDO      */
+/* ---------- Contenido ---------- */
 
 .proyecto-contenido {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.proyecto-numero {
+/* ---------- Número de proyecto ---------- */
+
+.proyecto-contenido .proyecto-numero {
     display: block;
     margin-bottom: 15px;
     font-size: 11px;
@@ -616,22 +557,23 @@ body {
 
 .proyecto-contenido p {
     margin-bottom: 25px;
+    text-align: justify;
     font-size: 14px;
     line-height: 1.7;
     color: var(--color-gris);
 }
 
+/* ---------- Tecnologías de las tarjetas ---------- */
 
-/*    TECNOLOGÍAS       */
-
-.proyecto-tecnologias {
+.proyecto-contenido .proyecto-tecnologias {
+    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 25px;
 }
 
-.proyecto-tecnologias span {
+.proyecto-contenido .proyecto-tecnologias span {
     padding: 7px 11px;
     background-color: var(--color-fondo);
     font-size: 11px;
@@ -639,8 +581,7 @@ body {
     color: var(--color-texto);
 }
 
-
-/*    ENLACE      */
+/* ---------- Enlace ---------- */
 
 .proyecto-link {
     display: inline-block;
@@ -654,7 +595,7 @@ body {
     color: var(--color-verde);
 }
 
-/*     PROYECTO ELEGIDO      */
+/*    PROYECTO ELEGIDO    */
 
 .proyecto-elegido {
     padding: 120px 5%;
@@ -665,7 +606,6 @@ body {
     max-width: 1100px;
     margin: 0 auto;
 }
-
 
 /* ---------- Encabezado ---------- */
 
@@ -679,14 +619,14 @@ body {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: var(--color-azul);
+    color: var(--color-turquesa-oscuro);
 }
 
 .proyecto-elegido-encabezado h2 {
     margin-bottom: 20px;
     font-size: clamp(42px, 6vw, 72px);
     font-weight: 600;
-    color: var(--color-azul);
+    color: var(--color-turquesa-oscuro);
 }
 
 .subtitulo-proyecto {
@@ -702,7 +642,6 @@ body {
     font-weight: 500;
     color: var(--color-gris);
 }
-
 
 /* ---------- Introducción ---------- */
 
@@ -731,11 +670,14 @@ body {
 .proyecto-descripcion p {
     margin-bottom: 18px;
     font-size: 15px;
+    text-align: justify;
     line-height: 1.8;
     color: var(--color-gris);
 }
 
-.proyecto-tecnologias {
+/* ---------- Tecnologías del proyecto elegido ---------- */
+
+.proyecto-elegido-introduccion .proyecto-tecnologias {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -743,7 +685,7 @@ body {
     max-width: 300px;
 }
 
-.proyecto-tecnologias span {
+.proyecto-elegido-introduccion .proyecto-tecnologias span {
     padding: 8px 13px;
     border: 1px solid #cfcfca;
     border-radius: 20px;
@@ -751,7 +693,6 @@ body {
     font-weight: 600;
     color: var(--color-texto);
 }
-
 
 /* ---------- Bloques de contenido ---------- */
 
@@ -763,7 +704,9 @@ body {
     border-bottom: 1px solid #d8d8d5;
 }
 
-.proyecto-numero {
+/* ---------- Número circular del proyecto elegido ---------- */
+
+.proyecto-bloque .proyecto-numero {
     flex-shrink: 0;
     width: 45px;
     height: 45px;
@@ -788,6 +731,7 @@ body {
     max-width: 800px;
     margin-bottom: 18px;
     font-size: 15px;
+    text-align: justify;
     line-height: 1.8;
     color: var(--color-gris);
 }
@@ -803,7 +747,6 @@ body {
     color: var(--color-gris);
 }
 
-
 /* ---------- Herramientas técnicas ---------- */
 
 .lista-tecnologias {
@@ -814,7 +757,7 @@ body {
 }
 
 .lista-tecnologias div {
-    min-width: 210px;
+    width: 100%;
     padding: 20px;
     background-color: #e9e9e6;
     border-radius: 12px;
@@ -833,7 +776,6 @@ body {
     font-size: 13px;
     line-height: 1.6;
 }
-
 
 /* ---------- Resultados técnicos ---------- */
 
@@ -857,14 +799,13 @@ body {
     margin-bottom: 8px;
     font-size: 42px;
     font-weight: 600;
-    color: var(--color-azul);
+    color: var(--color-turquesa-oscuro);
 }
 
 .resultado span {
     font-size: 13px;
     color: var(--color-gris);
 }
-
 
 /* ---------- Por qué elegí este proyecto ---------- */
 
@@ -887,87 +828,12 @@ body {
 .proyecto-eleccion p:not(.etiqueta-seccion) {
     margin-bottom: 18px;
     font-size: 15px;
+    text-align: justify;
     line-height: 1.8;
     color: var(--color-gris);
 }
 
-
-/*    RESPONSIVE       */
-
-@media (max-width: 768px) {
-
-    .proyecto-elegido {
-        padding: 80px 6%;
-    }
-
-    .proyecto-elegido-introduccion {
-        flex-direction: column;
-        gap: 35px;
-    }
-
-    .proyecto-tecnologias {
-        justify-content: flex-start;
-        max-width: 100%;
-    }
-
-    .proyecto-bloque {
-        gap: 20px;
-    }
-
-    .lista-tecnologias {
-        flex-direction: column;
-    }
-
-    .lista-tecnologias div {
-        min-width: 100%;
-    }
-
-    .proyecto-resultados {
-        justify-content: flex-start;
-    }
-
-    .resultado {
-        flex: 1 1 40%;
-    }
-
-    .proyecto-eleccion {
-        padding: 35px 25px;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    .proyecto-elegido {
-        padding: 65px 5%;
-    }
-
-    .proyecto-elegido-encabezado {
-        margin-bottom: 50px;
-    }
-
-    .proyecto-bloque {
-        flex-direction: column;
-        gap: 15px;
-        padding: 40px 0;
-    }
-
-    .proyecto-numero {
-        width: 40px;
-        height: 40px;
-    }
-
-    .resultado {
-        flex: 1 1 100%;
-        text-align: left;
-    }
-
-    .proyecto-eleccion {
-        margin-top: 60px;
-        padding: 30px 20px;
-    }
-}
-/*    CONTACTO    */
+/*    CONTACTO     */
 
 .contacto {
     padding: 120px 5%;
@@ -985,7 +851,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
 
 /* ---------- Encabezado ---------- */
 
@@ -1009,7 +874,6 @@ body {
     color: #e5e5e5;
 }
 
-
 /* ---------- Datos de contacto ---------- */
 
 .contacto-datos {
@@ -1029,6 +893,8 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 14px;
     color: var(--color-blanco);
+    font-size: 13px;
+    font-weight: 500;
     transition: 0.3s ease;
 }
 
@@ -1045,17 +911,253 @@ body {
     color: var(--color-diamante);
 }
 
-.contacto-datos a {
+/*    FOOTER     */
+
+.footer.contenedor {
+    padding: 30px 6%;
+    color: var(--color-blanco);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+    margin: 5px;
     font-size: 13px;
-    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/*    MENÚ RESPONSIVE     */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--color-blanco);
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
 }
 
 
-/* =====================================================
-   CONTACTO RESPONSIVE
-   ===================================================== */
+/*    RESPONSIVE TABLET Y MÓVIL     */
 
 @media (max-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    .header {
+        position: relative;
+        padding: 20px 6%;
+    }
+
+    /* ---------- Menú ---------- */
+
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 6% 20px;
+        background-color: var(--color-blanco);
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+        z-index: 1000;
+    }
+
+    .nav.activo {
+        display: flex;
+    }
+
+    .nav a {
+        display: block;
+        width: 100%;
+        padding: 14px 0;
+        font-size: 15px;
+        line-height: 1.4;
+        text-align: left;
+        color: #222222;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .nav a:last-child {
+        border-bottom: none;
+    }
+
+    .nav a:hover {
+        color: #784BA0;
+    }
+
+    /*        HERO RESPONSIVE      */
+
+    .hero {
+        min-height: auto;
+        padding: 70px 6%;
+        flex-direction: column;
+        gap: 45px;
+        text-align: center;
+    }
+
+    .hero-foto {
+        width: 260px;
+        height: 340px;
+    }
+
+    .hero-contenido {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-descripcion {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-botones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /*    SOBRE MÍ RESPONSIVE    */
+
+    .sobre-mi {
+        padding: 80px 6%;
+    }
+
+    .sobre-mi-encabezado {
+        margin-bottom: 50px;
+    }
+
+    .sobre-mi-encabezado h2 {
+        font-size: 38px;
+    }
+
+    .sobre-mi-contenido {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .sobre-mi-bloque {
+        padding-left: 35px;
+    }
+
+    .sobre-mi-bloque h3 {
+        font-size: 22px;
+    }
+
+    .sobre-mi-bloque p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .sobre-mi-formacion {
+        max-width: 100%;
+        margin-bottom: 60px;
+        padding-left: 25px;
+    }
+
+    .sobre-mi-formacion p {
+        font-size: 16px;
+    }
+
+    .sobre-mi-frase {
+        margin-bottom: 60px;
+    }
+
+    .sobre-mi-frase p {
+        font-size: 27px;
+    }
+
+    /* ---------- Evolución ---------- */
+
+    .sobre-mi-evolucion {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .evolucion-linea {
+        width: 1px;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+
+    /*     SKILLS RESPONSIVE       */
+
+    .skills {
+        padding: 80px 6%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /*       PROYECTOS RESPONSIVE       */
+
+    .proyectos {
+        padding: 80px 6%;
+    }
+
+    .proyectos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-card {
+        width: 100%;
+    }
+
+    /*    PROYECTO ELEGIDO RESPONSIVE      */
+
+    .proyecto-elegido {
+        padding: 80px 6%;
+    }
+
+    .proyecto-elegido-introduccion {
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .proyecto-elegido-introduccion .proyecto-tecnologias {
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+
+    .proyecto-bloque {
+        gap: 20px;
+    }
+
+    .lista-tecnologias {
+        flex-direction: column;
+    }
+
+    .proyecto-resultados {
+        justify-content: flex-start;
+    }
+
+    .resultado {
+        flex: 1 1 40%;
+    }
+
+    .proyecto-eleccion {
+        padding: 35px 25px;
+    }
+
+    /*     CONTACTO RESPONSIVE      */
 
     .contacto {
         padding: 90px 6%;
@@ -1071,8 +1173,64 @@ body {
     }
 }
 
+/*    RESPONSIVE TELÉFONOS PEQUEÑOS     */
 
 @media (max-width: 480px) {
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        padding: 60px 5%;
+        gap: 35px;
+    }
+
+    .hero-foto {
+        width: 220px;
+        height: 290px;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .boton {
+        text-align: center;
+    }
+
+    /* ---------- Proyecto elegido ---------- */
+
+    .proyecto-elegido {
+        padding: 65px 5%;
+    }
+
+    .proyecto-elegido-encabezado {
+        margin-bottom: 50px;
+    }
+
+    .proyecto-bloque {
+        flex-direction: column;
+        gap: 15px;
+        padding: 40px 0;
+    }
+
+    .proyecto-bloque .proyecto-numero {
+        width: 40px;
+        height: 40px;
+    }
+
+    .resultado {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .proyecto-eleccion {
+        margin-top: 60px;
+        padding: 30px 20px;
+    }
+
+    /* ---------- Contacto ---------- */
 
     .contacto {
         padding: 70px 5%;
@@ -1081,5 +1239,4 @@ body {
     .contacto-descripcion {
         font-size: 14px;
     }
-
 }

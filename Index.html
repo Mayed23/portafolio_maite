@@ -7,6 +7,11 @@
 
     <!--ESTILOS-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--AOS-Animate-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -27,9 +32,15 @@
 
             <a href="#proyectos">Proyectos</a>
 
+            <a href="#proyecto-elegido">Proyecto Elegido</a>
+
             <a href="#contacto">Contacto</a>
 
         </nav>
+
+        <button class="menu-toggle" type ="button" aria-label="Abrir menú" aria-expanded="false">
+            ☰
+        </button>
 
     </header>
 
@@ -40,7 +51,6 @@
         <div class="hero-foto">
             <img src="assets/img/FotoPortafolio.png" alt="Fotografía de Maite Esteves">
         </div>
-
 
         <!-- CONTENIDO -->
         <div class="hero-contenido">
@@ -79,7 +89,7 @@
         <div class="sobre-mi-contenedor">
 
             <!-- ENCABEZADO -->
-            <div class="sobre-mi-encabezado">
+            <div class="sobre-mi-encabezado" data-aos="fade-up">
 
                 <p class="seccion-etiqueta">
                     SOBRE MÍ
@@ -91,12 +101,11 @@
 
             </div>
 
-
             <!-- EXPERIENCIA Y TRANSICIÓN -->
             <div class="sobre-mi-contenido">
 
                 <!-- BLOQUE 01 -->
-                <article class="sobre-mi-bloque">
+                <article class="sobre-mi-bloque" data-aos="fade-up">
 
                     <span class="numero-bloque">
                         01
@@ -117,9 +126,8 @@
 
                 </article>
 
-
                 <!-- BLOQUE 02 -->
-                <article class="sobre-mi-bloque">
+                <article class="sobre-mi-bloque" data-aos="fade-up" data-aos-delay="100">
 
                     <span class="numero-bloque">
                         02
@@ -164,7 +172,7 @@
 
 
             <!-- FRASE DESTACADA -->
-            <div class="sobre-mi-frase">
+            <div class="sobre-mi-frase" data-aos="fade-right">
 
                 <p>
                     Experiencia en gestión.
@@ -178,28 +186,28 @@
             <!-- EVOLUCIÓN -->
             <div class="sobre-mi-evolucion">
 
-                <div class="evolucion-item">
+                <div class="evolucion-item" data-aos="zoom-in">
                     <span>01</span>
                     <p>Administración</p>
                 </div>
 
                 <div class="evolucion-linea"></div>
 
-                <div class="evolucion-item">
+                <div class="evolucion-item" data-aos="zoom-in" data-aos-delay="100">
                     <span>02</span>
                     <p>Gestión</p>
                 </div>
 
                 <div class="evolucion-linea"></div>
 
-                <div class="evolucion-item">
+                <div class="evolucion-item" data-aos="zoom-in" data-aos-delay="200">
                     <span>03</span>
                     <p>Datos</p>
                 </div>
 
                 <div class="evolucion-linea"></div>
 
-                <div class="evolucion-item">
+                <div class="evolucion-item" data-aos="zoom-in" data-aos-delay="300">
                     <span>04</span>
                     <p>Tecnología</p>
                 </div>
@@ -213,7 +221,7 @@
 
     <section id="skills" class="skills">
 
-        <div class="skills-contenedor">
+        <div class="skills-contenedor" data-aos="fade-right">
 
             <!-- ENCABEZADO -->
             <div class="skills-encabezado">
@@ -235,12 +243,11 @@
 
             </div>
 
-
             <!-- CATEGORÍAS -->
             <div class="skills-grid">
 
                 <!-- GESTIÓN -->
-                <article class="skill-card">
+                <article class="skill-card" data-aos="fade-up">
 
                     <span class="skill-numero">
                         01
@@ -265,9 +272,8 @@
 
                 </article>
 
-
                 <!-- DATOS -->
-                <article class="skill-card">
+                <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
 
                     <span class="skill-numero">
                         02
@@ -291,9 +297,8 @@
 
                 </article>
 
-
                 <!-- DESARROLLO -->
-                <article class="skill-card">
+                <article class="skill-card" data-aos="fade-up" data-aos-delay="200">
 
                     <span class="skill-numero">
                         03
@@ -311,6 +316,7 @@
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>JQuery</li>
                         <li>JavaScript</li>
                         <li>Python</li>
                         <li>Django</li>
@@ -318,9 +324,8 @@
 
                 </article>
 
-
                 <!-- HERRAMIENTAS -->
-                <article class="skill-card">
+                <article class="skill-card" data-aos="fade-up" data-aos-delay="300">
 
                     <span class="skill-numero">
                         04
@@ -349,8 +354,8 @@
         </div>
 
     </section>
-    <!-- PROYECTOS -->
-    
+
+    <!-- PROYECTOS -->    
     <section id="proyectos" class="proyectos">
 
         <div class="proyectos-contenedor">
@@ -362,7 +367,7 @@
                     PROYECTOS
                 </p>
 
-                <h2>
+                <h2 data-aos="fade-right">
                     Aprender haciendo.
                 </h2>
 
@@ -374,14 +379,11 @@
 
             </div>
 
-
             <!-- PROYECTOS -->
             <div class="proyectos-lista">
 
-
                 <!--    PROYECTO 01    -->
-
-                <article class="proyecto-card">
+                <article class="proyecto-card" data-aos="zoom-in-down">
 
                     <div class="proyecto-imagen">
 
@@ -403,13 +405,14 @@
                         </h3>
 
                         <p>
-                            Aplicación orientada a la gestión de
-                            operaciones financieras. Se desarrolla una billetera digital simulada que 
-                            permite al usuario registrarse, iniciar sesión y realizar operaciones financieras 
-                            mediante una interfaz organizada en diferentes vistas.
-                            Desafío, crear un flujo funcional de usuario conectando distintas páginas, formularios 
-                            y operaciones mediante tecnologías Frontend.
-                            Esta actividad se realiza como parte formación Full Stack Python.
+                            Alke Wallet fue un proyecto de desarrollo Front-end orientado 
+                            a la creación de una billetera digital, donde desarrollé una interfaz 
+                            responsive para simular operaciones como inicio de sesión, consulta de saldo, 
+                            depósitos, transferencias, gestión de contactos e historial de movimientos.
+                            Este proyecto me permitió fortalecer mis fundamentos de desarrollo web y 
+                            comprender cómo transformar requerimientos funcionales en una interfaz interactiva, 
+                            sentando las bases para posteriormente desarrollar una versión más completa 
+                            de Alke Wallet con Python, Django y MySQL
                         </p>
 
                         <div class="proyecto-tecnologias">
@@ -417,6 +420,8 @@
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>JQuery</span>
 
                         </div>
 
@@ -430,8 +435,7 @@
 
 
                 <!--     PROYECTO 02     -->
-
-                <article class="proyecto-card">
+                <article class="proyecto-card" data-aos="zoom-in-down" data-aos-delay="100">
 
                     <div class="proyecto-imagen">
 
@@ -453,18 +457,18 @@
                         </h3>
 
                         <p>
-                            Se desarrolló una aplicación en Python para gestionar clientes de distintos tipos —Regular, Premium y Corporativo— 
-                            permitiendo agregar, consultar, modificar y eliminar registros, con interfaz gráfica utilizando Tkinter, aplicando Programación Orientada a Objetos, 
-                            herencia y polimorfismo. Los datos se almacenan en archivos JSON y las operaciones realizadas se registran mediante un sistema de logs.
-                            Se implementa solución que permita manejar diferentes tipos de clientes, validar sus datos, evitar registros duplicados
-                            y mantener la información almacenada de forma persistente.
+                            Gestión Inteligente de Clientes (GIC) fue un proyecto desarrollado en Python 
+                            para administrar información de clientes mediante Programación Orientada a Objetos.
+                            La aplicación permite crear, consultar, modificar y eliminar clientes, diferenciándolos 
+                            en categorías Regular, Premium y Corporativo, e incorporando validaciones, control de datos 
+                            duplicados, manejo de errores y registro de actividades.
                         </p>
 
                         <div class="proyecto-tecnologias">
 
                             <span>Python</span>
-                            <span>Django</span>
-                            <span>SQL</span>
+                            <span>Tkinter</span>
+                            <span>Json</span>
 
                         </div>
 
@@ -478,8 +482,7 @@
 
 
                 <!--   PROYECTO 03  -->
-
-                <article class="proyecto-card">
+                <article class="proyecto-card" data-aos="zoom-in-down" data-aos-delay="200">
 
                     <div class="proyecto-imagen">
 
@@ -501,12 +504,13 @@
                         </h3>
 
                         <p>
-                            La idea es construir un sistema que permitiera administrar proyectos y tareas, 
-                            relacionándolos con usuarios y aplicando controles de acceso 
-                            y validaciones para proteger la información.
-                            Se desarrolló una aplicación con Django, utilizando autenticación de usuarios,
-                            operaciones CRUD, relaciones entre modelos, vistas basadas en clases y un panel 
-                            de administración. La interfaz fue complementada con Bootstrap y estilos personalizados.
+                            Aplicación web desarrollada con Django para gestionar proyectos y tareas 
+                            de manera organizada. El sistema permite a los usuarios registrarse y autenticarse,
+                            crear y administrar proyectos y asociar tareas a estos, incorporando restricciones 
+                            de acceso para proteger la información de cada usuario.
+                            Me permitió avanzar desde la programación con Python hacia el desarrollo 
+                            de aplicaciones web con Django, comprendiendo cómo integrar modelos, vistas, formularios, 
+                            templates, autenticación y base de datos en una solución funcional.
                         </p>
 
                         <div class="proyecto-tecnologias">
@@ -533,281 +537,315 @@
         </div>
 
     </section>
-    <section id="proyectos" class="proyectos">
 
-    </section>
-
-
-    <!-- PROYECTO ELEGIDO -->
-    
+    <!-- PROYECTO ELEGIDO -->    
     <section id="proyecto-elegido" class="proyecto-elegido">
 
-    <div class="contenedor">
+        <div class="contenedor">
 
-        <!-- Encabezado de la sección -->
-        <div class="proyecto-elegido-encabezado">
+            <!-- Encabezado de la sección -->
+            <div class="proyecto-elegido-encabezado">
 
-            <p class="etiqueta-seccion">PROYECTO ELEGIDO</p>
+                <p class="etiqueta-seccion">Caso de Estudio</p>
 
-            <h2>Alke Wallet</h2>
+                <h2 data-aos="fade-right">Alke Wallet</h2>
 
-            <p class="subtitulo-proyecto">
-                Billetera digital para la gestión de clientes,
-                cuentas y operaciones financieras.
-            </p>
+                <p class="subtitulo-proyecto">
+                    Billetera digital para la gestión de clientes,
+                    cuentas y operaciones financieras.
+                </p>
 
-            <a href="https://github.com/Mayed23/proyecto_modulo_7.git" class="proyecto-link">
-                            Ver en GitHub →
-            </a>
+                <a href="https://github.com/Mayed23/proyecto_modulo_7.git" class="proyecto-link">
+                                Ver en GitHub →
+                </a>
 
-        </div>
+            </div>
 
 
-        <!-- Introducción del proyecto -->
-        <div class="proyecto-elegido-introduccion">
+            <!-- Introducción del proyecto -->
+            <div class="proyecto-elegido-introduccion">
 
-            <div class="proyecto-descripcion">
+                <div class="proyecto-descripcion">
 
-                <h3>Una solución web para gestionar información financiera</h3>
+                    <h3>Una solución web para gestionar información financiera</h3>
 
-                <p>
-                    Alke Wallet es una aplicación web desarrollada con Django
+                    <p>
+                        Alke Wallet es una aplicación web desarrollada con Django
                     que permite a un operador administrar clientes, perfiles,
                     cuentas, tipos de cuenta y operaciones financieras desde
                     un panel web.
-                </p>
+                    </p>
 
-                <p>
+                    <p>
                     El proyecto combina desarrollo web, modelamiento de datos
                     y reglas de negocio para mantener la integridad de la
                     información durante las operaciones.
-                </p>
+                    </p>
+
+                </div>
+
+                <div class="proyecto-tecnologias">
+
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+
+                </div>
 
             </div>
 
-            <div class="proyecto-tecnologias">
 
-                <span>Python</span>
-                <span>Django</span>
-                <span>MySQL</span>
-                <span>Bootstrap</span>
-                <span>JavaScript</span>
+            <!-- Actividad y desafío -->
+            <div class="proyecto-bloque">
 
-            </div>
+                <div class="proyecto-numero">01</div>
 
-        </div>
+                <div>
+                    <h3>Actividad</h3>
 
-
-        <!-- Actividad y desafío -->
-        <div class="proyecto-bloque">
-
-            <div class="proyecto-numero">01</div>
-
-            <div>
-                <h3>Actividad</h3>
-
-                <p>
-                    Desarrollar una aplicación web para gestionar clientes,
-                    perfiles, cuentas y operaciones financieras como
-                    depósitos, retiros y transferencias.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="proyecto-bloque">
-
-            <div class="proyecto-numero">02</div>
-
-            <div>
-                <h3>Desafío</h3>
-
-                <p>
-                    Construir una solución capaz de manejar información
-                    relacionada y aplicar reglas de negocio que protegieran
-                    la integridad de los datos.
-                </p>
-
-                <ul>
-                    <li>Control de saldos.</li>
-                    <li>Validación de operaciones.</li>
-                    <li>Relaciones entre modelos.</li>
-                    <li>Control de transferencias.</li>
-                    <li>Historial de transacciones.</li>
-                    <li>Restricciones para modificar o eliminar información.</li>
-                </ul>
+                    <p>
+                        Desarrollar una aplicación web para gestionar clientes,
+                        perfiles, cuentas y operaciones financieras como
+                        depósitos, retiros y transferencias.
+                    </p>
+                </div>
 
             </div>
 
-        </div>
 
+            <div class="proyecto-bloque">
 
-        <!-- Solución -->
-        <div class="proyecto-bloque">
+                <div class="proyecto-numero">02</div>
 
-            <div class="proyecto-numero">03</div>
+                <div>
+                    <h3>Desafío</h3>
 
-            <div>
-                <h3>Solución</h3>
+                    <p>
+                        El reto central fue diseñar un modelo de datos relacional completo 
+                        y coherente que reflejara un caso de uso financiero real, implementando 
+                        los tres tipos de relaciones del ORM de Django (One to One, Many to One, Many to Many) 
+                        de forma que tuvieran sentido de negocio genuino — no solo como ejercicio técnico. 
+                        A esto se sumó el desafío de mantener la integridad financiera de los datos: evitar que 
+                        el saldo se editara manualmente, bloquear eliminaciones que comprometieran la trazabilidad, 
+                        y asegurar que operaciones como las transferencias actualizaran correctamente ambos extremos de la operación.
+                    </p>
 
-                <p>
-                    Se desarrolló una aplicación con Django utilizando
-                    modelos, formularios, vistas y plantillas para organizar
-                    la información y gestionar las operaciones desde un
-                    panel web.
-                </p>
-
-                <ul>
-                    <li>CRUD de clientes, perfiles, cuentas y etiquetas.</li>
-                    <li>Depósitos, retiros y transferencias.</li>
-                    <li>Actualización automática de saldos.</li>
-                    <li>Validaciones y reglas de negocio.</li>
-                    <li>Autenticación y control de acceso.</li>
-                    <li>Filtros para consultar transacciones.</li>
-                    <li>Interacciones dinámicas mediante JavaScript.</li>
-                </ul>
+                </div>
 
             </div>
 
-        </div>
+
+            <!-- Solución -->
+            <div class="proyecto-bloque">
+
+                <div class="proyecto-numero">03</div>
+
+                <div>
+                    <h3>Solución</h3>
+
+                    <p>
+                        Se desarrolló una aplicación con Django utilizando
+                        modelos, formularios, vistas y plantillas para organizar
+                        la información y gestionar las operaciones desde un
+                        panel web.
+                    </p>
+
+                    <ul>
+                        <li>CRUD de clientes, perfiles, cuentas y etiquetas.</li>
+                        <li>Depósitos, retiros y transferencias.</li>
+                        <li>Actualización automática de saldos.</li>
+                        <li>Validaciones y reglas de negocio.</li>
+                        <li>Autenticación y control de acceso.</li>
+                        <li>Filtros para consultar transacciones.</li>
+                        <li>Interacciones dinámicas mediante JavaScript.</li>
+                    </ul>
+
+                </div>
+
+            </div>
 
 
-        <!-- Herramientas técnicas -->
-        <div class="proyecto-bloque">
+            <!-- Herramientas técnicas -->
+            <div class="proyecto-bloque">
 
-            <div class="proyecto-numero">04</div>
+                <div class="proyecto-numero">04</div>
 
-            <div>
-                <h3>Herramientas técnicas</h3>
+                <div>
+                    <h3>Herramientas técnicas</h3>
 
-                <div class="lista-tecnologias">
+                    <div class="lista-tecnologias">
 
-                    <div>
-                        <strong>Backend</strong>
-                        <p>Python 3.12 · Django 5.1</p>
-                    </div>
+                        <div data-aos="zoom-in">
+                            <strong>Backend</strong>
+                            <p>Python 3.12 · Django 5.1</p>
+                        </div>
 
-                    <div>
-                        <strong>Base de datos</strong>
-                        <p>MySQL · Django ORM · SQL</p>
-                    </div>
+                        <div data-aos="zoom-in" data-aos-delay="100">
+                            <strong>Base de datos</strong>
+                            <p>MySQL · Django ORM </p>
+                        </div>
 
-                    <div>
-                        <strong>Frontend</strong>
-                        <p>HTML · CSS · Bootstrap 5 · JavaScript</p>
-                    </div>
+                        <div data-aos="zoom-in" data-aos-delay="200">
+                            <strong>Frontend</strong>
+                            <p>HTML · CSS · Bootstrap 5 · JavaScript</p>
+                        </div>
 
-                    <div>
-                        <strong>Otros</strong>
-                        <p>python-dotenv</p>
+                        <div data-aos="zoom-in" data-aos-delay="300">
+                            <strong>Otros</strong>
+                            <p>python-dotenv · Visual Studio Code · GitHub</p>
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
+
+            <!-- Aprendizajes -->
+            <div class="proyecto-bloque">
+
+                <div class="proyecto-numero">05</div>
+
+                <div>
+                    <h3>Principales aprendizajes</h3>
+
+                    <p>
+                        El desarrollo del proyecto permitió profundizar en la
+                        creación de aplicaciones web con Django y comprender cómo
+                        estructurar información y reglas de negocio dentro de una
+                        aplicación.
+                    </p>
+
+                    <ul>
+                        <li>Modelamiento de datos relacionales.</li>
+                        <li>Relaciones One-to-One, Many-to-One y Many-to-Many.</li>
+                        <li>Creación de formularios y validaciones.</li>
+                        <li>Autenticación y control de acceso.</li>
+                        <li>Consultas mediante Django ORM y SQL.</li>
+                        <li>Implementación de reglas de negocio.</li>
+                        <li>Uso de JavaScript para mejorar la interacción.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- Habilidades técnicas aplicadas -->
+            <div class="proyecto-bloque">
+
+                <div class="proyecto-numero">06</div>
+
+                <div>
+                    <h3>Habilidades técnicas aplicadas</h3>
+
+                    <div class="lista-tecnologias">
+
+                        <div data-aos="zoom-in">
+                            <strong>Desarrollo web</strong>
+                            <p>
+                                Python · Django · HTML · CSS · Bootstrap · JavaScript
+                            </p>
+                        </div>
+
+                        <div data-aos="zoom-in" data-aos-delay="100">
+                            <strong>Datos y bases de datos</strong>
+                            <p>
+                                MySQL · SQL · Django ORM · Modelamiento relacional
+                            </p>
+                        </div>
+
+                        <div data-aos="zoom-in" data-aos-delay="200">
+                            <strong>Desarrollo funcional</strong>
+                            <p>
+                                CRUD · Formularios · Validaciones · Autenticación
+                            </p>
+                        </div>
+
+                        <div data-aos="zoom-in" data-aos-delay="300">
+                            <strong>Lógica de negocio</strong>
+                            <p>
+                                Reglas de negocio · Integridad de datos · Gestión de transacciones
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
-        <!-- Aprendizajes -->
-        <div class="proyecto-bloque">
 
-            <div class="proyecto-numero">05</div>
+            <!-- Indicadores del proyecto -->                
+            <div class="proyecto-resultados">
 
-            <div>
-                <h3>Principales aprendizajes</h3>
+                <div class="resultado" data-aos="zoom-in">
+                    <strong>4</strong>
+                    <span>entidades con CRUD</span>
+                </div>
+
+                <div class="resultado" data-aos="zoom-in" data-aos-delay="100">
+                    <strong>3</strong>
+                    <span>tipos de relaciones</span>
+                </div>
+
+                <div class="resultado" data-aos="zoom-in" data-aos-delay="200">
+                    <strong>3</strong>
+                    <span>tipos de transacciones</span>
+                </div>
+
+                <div class="resultado" data-aos="zoom-in" data-aos-delay="300">
+                    <strong>1</strong>
+                    <span>panel web para la gestión</span>
+                </div>
+
+            </div>
+
+
+            <!-- Por qué elegí este proyecto -->
+            <div class="proyecto-eleccion">
+
+                <p class="etiqueta-seccion">¿POR QUÉ ESTE PROYECTO?</p>
+
+                <h3 data-aos="fade-right">
+                    La evolución de una primera experiencia Front-end
+                    hacia una aplicación web más completa.
+                </h3>
 
                 <p>
-                    El desarrollo del proyecto permitió profundizar en la
-                    creación de aplicaciones web con Django y comprender cómo
-                    estructurar información y reglas de negocio dentro de una
-                    aplicación.
+                    Elegí Alke Wallet porque representa la evolución de mi
+                    aprendizaje en desarrollo web. En una primera versión
+                    trabajé el Front-end de una billetera digital utilizando
+                    HTML, CSS, Bootstrap, JavaScript y jQuery.
                 </p>
 
-                <ul>
-                    <li>Modelamiento de datos relacionales.</li>
-                    <li>Relaciones One-to-One, Many-to-One y Many-to-Many.</li>
-                    <li>Creación de formularios y validaciones.</li>
-                    <li>Autenticación y control de acceso.</li>
-                    <li>Consultas mediante Django ORM y SQL.</li>
-                    <li>Implementación de reglas de negocio.</li>
-                    <li>Uso de JavaScript para mejorar la interacción.</li>
-                </ul>
+                <p>
+                    En esta segunda versión llevé el mismo concepto a una
+                    aplicación desarrollada con Python y Django, incorporando
+                    MySQL, Django ORM, autenticación, operaciones CRUD,
+                    relaciones entre modelos y reglas de negocio.
+                </p>
+
+                <p>
+                    Esta evolución me permitió pasar de construir la interfaz
+                    y la interacción de una aplicación a trabajar también en
+                    su estructura de datos, lógica y funcionamiento interno,
+                    conectando mis conocimientos de gestión de información y
+                    procesos con nuevas herramientas tecnológicas.
+                </p>
 
             </div>
 
         </div>
 
+    </section>
 
-        <!-- Indicadores del proyecto -->
-            
-        <div class="proyecto-resultados">
-
-            <div class="resultado">
-                <strong>4</strong>
-                <span>entidades con CRUD</span>
-            </div>
-
-            <div class="resultado">
-                <strong>3</strong>
-                <span>tipos de relaciones</span>
-            </div>
-
-            <div class="resultado">
-                <strong>3</strong>
-                <span>tipos de transacciones</span>
-            </div>
-
-            <div class="resultado">
-                <strong>1</strong>
-                <span>panel web para la gestión</span>
-            </div>
-
-        </div>
-
-
-        <!-- Por qué elegí este proyecto -->
-        <div class="proyecto-eleccion">
-
-            <p class="etiqueta-seccion">¿POR QUÉ ESTE PROYECTO?</p>
-
-            <h3>
-                El punto donde mi experiencia en gestión comienza
-                a conectarse con la tecnología.
-            </h3>
-
-            <p>
-                Elegí Alke Wallet porque representa uno de los proyectos
-                que mejor refleja mi transición hacia el desarrollo
-                tecnológico.
-            </p>
-
-            <p>
-                En su desarrollo pude combinar mi experiencia trabajando
-                con información, procesos y reglas de negocio con nuevas
-                herramientas como Python, Django, SQL y desarrollo web.
-            </p>
-
-            <p>
-                Este proyecto me permitió enfrentar un problema con
-                características cercanas a un escenario real, donde la
-                organización de los datos, las validaciones y la integridad
-                de la información son fundamentales.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-    <!-- CONTACTO -->
     <!-- CONTACTO -->
     <section id="contacto" class="contacto">
 
-        <div class="contenedor">
+        <div class="contenedor" data-aos="fade-up">
 
             <div class="contacto-contenido">
 
@@ -827,31 +865,31 @@
                     <a href="https://wa.me/56934693215"
                     target="_blank"
                     rel="noopener noreferrer">
-                        <span>WhatsApp</span>
+                        <span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
                         Escríbeme →
                     </a>
 
                     <a href="mailto:maiteesteves@gmail.com">
-                        <span>Email</span>
+                        <span><i class="fa-solid fa-envelope"></i> Email</span>
                         maiteesteves@gmail.com
                     </a>
 
                     <a href="mailto:maiteesteves1972@gmail.com">
-                        <span>Email</span>
+                        <span><i class="fa-solid fa-envelope"></i> Email</span>
                         maiteesteves1972@gmail.com
                     </a>
 
                     <a href="https://www.linkedin.com/in/maite-esteves-araca-aaab56191"
                     target="_blank"
                     rel="noopener noreferrer">
-                        <span>LinkedIn</span>
+                        <span><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
                         Ver perfil →
                     </a>
 
                     <a href="https://github.com/Mayed23"
                     target="_blank"
                     rel="noopener noreferrer">
-                        <span>GitHub</span>
+                        <span><i class="fa-brands fa-github"></i> GitHub</span>
                         Ver proyectos →
                     </a>
 
@@ -863,11 +901,20 @@
 
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="contenedor">
             <p>2026 | Maite Esteves</p>
         </div>
     </footer>
+   
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+   
 </body>
 
 
